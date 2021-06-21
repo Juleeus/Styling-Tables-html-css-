@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <a href="index.html">HOME</a>
+    <h1>---------------------------------------FORM-------------------------------------</h1>
+    <form action="">
+        <h1>--------User Information--------</h1>
+        <h2>Contact Information</h2>
+
+        <p>Required by *</p>
+
+        <p>Name *: <input type="text" name="name" required></p>
+
+
+
+        <fieldset>
+            <legend>GENDER</legend>
+            <p>
+                Male <input type="radio" name="gender" id="male">
+                Female <input type="radio" name="gender" id="female">
+                Other <input type="radio" name="gender" id="other">
+            </p>
+        </fieldset>
+
+
+        <p>Address: <textarea name="address" id="address" cols="100" rows="7" required ></textarea></p>
+
+        <p>Mail: *<input type="email" name="email" id="email" required>></p>
+
+        <p>Pincode: *<input type="number" name="pincode" id="pincode" required></p>
+
+
+        <h1>---------Payment Information----------</h1>
+
+        <p>
+            Card Type: *
+            <select name="card_type" id="card_type">
+                <option value="">--Select a card type--</option>
+                <option value="visa">Visa</option>
+                <option value="Master Crad">Master Card</option>
+                <option value="Rupay">Rupay</option>
+                <option value="Credit card">Credit card</option>
+            </select>
+        </p>
+
+        <p>
+            Crad Number: *
+            <input type="number" name="card number" id="card number" required>
+        </p>
+        
+        <p>
+            EXpiration Date: *
+            <input type="date" name="card date" id="card date" required>
+        </p>
+
+        <p>
+            CVV: *
+            <input type="password" name="cvv" id="cvv" required>
+        </p>
+
+        <input type="submit" value="Pay Now">
+    </form>
+</body>
+</html>
